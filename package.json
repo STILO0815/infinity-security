@@ -1,0 +1,22 @@
+{
+  "name": "infinity-security",
+  "version": "14.2.0",
+  "description": "Infinity Security v14.2 - MP4 Aura Edit Engine with sound, smart security sorting and /edit controls",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js && node --check src/config.js && node --check src/security/actions.js && node --check src/security/aiGuard.js && node --check src/security/aura.js && node --check src/security/channelSafety.js && node --check src/security/incidents.js && node --check src/security/risk.js && node --check src/security/mediation.js && node --check src/security/mediatorAI.js && node --check src/security/appeals.js && node --check src/security/messageAudit.js && node --check src/security/linkSafety.js && node --check src/security/accountRisk.js && node --check src/security/voiceSecurity.js && node --check src/security/securityScore.js && node --check src/security/voiceRooms.js && node --check src/security/verification.js && node --check src/security/permissionGuard.js && node --check src/security/backups.js && node --check src/security/emergency.js && node --check src/security/reports.js && node --check src/security/quarantine.js && node --check src/security/jsonStore.js && node --check src/security/threatEngine.js && node --check src/security/healthGuard.js && node --check src/security/presets.js && node --check src/security/selfProtection.js && node --check src/security/protectedMembers.js && node --check src/security/autoSetup.js && node --check src/games/cursedRealmsCore.js && node --check src/games/cursedRealms.js && node --check src/events/serverBoss.js && node --check src/security/reactionClips.js",
+    "test": "node tests/security-regression.js && node tests/v11-hardening.js && node tests/v12-selfguard.js && node tests/v12_1-protected-member.js && node tests/v13-mediation-ai.js && node tests/v13_1-autosetup.js && node tests/cursed-realms.js && node tests/server-boss.js && node tests/reaction-clips.js",
+    "audit": "npm run check && npm test"
+  },
+  "engines": {
+    "node": ">=24.17.0"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "discord.js": "^14.27.0",
+    "dotenv": "^16.6.1"
+  }
+}
